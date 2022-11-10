@@ -50,6 +50,9 @@ export const Contact = () => {
         return null
       }
 
+      name.trim();
+      message.trim();
+      
       fetch('http://51.250.111.119:5000/comment', {
         method: 'POST',
         headers: {
