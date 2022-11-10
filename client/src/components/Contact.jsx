@@ -9,7 +9,17 @@ export const Contact = () => {
   useEffect(() => {
     getComments();
   }, []);
-  
+
+  function count(str, symb) {
+    let counter = 0;
+    for (let char of str ) {
+      if (char === symb) {
+        counter++;
+      }
+    }
+
+    return counter;
+  }
   
   function getComments() {
       let response = fetch('http://51.250.111.119:5000/comment')
@@ -25,7 +35,7 @@ export const Contact = () => {
 
   function createComment() {
       let name = prompt('Enter your name', '');
-      while (name === "") {
+      while (name === "" || name.length == count(name, " ")) {
         name = prompt('Enter your name correctly!');
       }
       if (name === null) {
@@ -33,7 +43,7 @@ export const Contact = () => {
       }
 
       let message = prompt('Enter your message', '');
-      while (message === "") {
+      while (message === "" || name.length == count(name, " ")) {
         message = prompt('Enter your message correctly!');
       }
       if (message === null) {
