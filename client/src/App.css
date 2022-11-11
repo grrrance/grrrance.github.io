@@ -253,7 +253,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 
-
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -272,14 +271,87 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner h1 {
-  font-size: 65px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  margin-bottom: 20px;
-  display: block;
+
+@media all and (min-width: 320px) and (max-width:480px) {
+  .banner h1 {
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    display: block;
+  }
+  
+  .vacancy {
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    display: block;
+  }
 }
+
+
+@media all and (min-width: 480px) and (max-width:768px) {
+  .banner h1 {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    display: block;
+  }
+  
+  .vacancy {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    display: block;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1084px) {
+  .banner h1 {
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    display: block;
+  }
+  
+  .vacancy {
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    display: block;
+  }
+}
+
+
+@media all and (min-width: 1085px) {
+  .banner h1 {
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    display: block;
+  }
+  
+  .vacancy {
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    display: block;
+  }
+}
+
+.whoami {
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
@@ -307,7 +379,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
-  margin-left: 69px;
+  margin-left: 55px;
 }
 @keyframes updown {
     0% {
