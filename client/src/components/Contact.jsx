@@ -22,7 +22,7 @@ export const Contact = () => {
   }
   
   function getComments() {
-      let response = fetch('http://51.250.111.119:5000/comment')
+      let response = fetch('https://grance.hackerclass.ru/comment')
           .then(response => {
               let x = response.json();
               //console.log(x)
@@ -53,7 +53,7 @@ export const Contact = () => {
       name.trim();
       message.trim();
       
-      fetch('http://51.250.111.119:5000/comment', {
+      fetch('https://grance.hackerclass.ru/comment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
