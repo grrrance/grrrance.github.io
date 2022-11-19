@@ -4,8 +4,9 @@ require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
+const https = require('https')
 const app = express();
+
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -19,6 +20,17 @@ const pgClient = new Pool({
   port: "5432"
 });
 
+const privateKey1 = fs.readFileSync('/etc/letsencrypt/live/grance.hackerclass.ru/privkey.pem', 'utf8');
+const certificate1 = fs.readFileSync('/etc/letsencrypt/live/grance.hackerclass.ru/cert.pem', 'utf8');
+const ca1 = fs.readFileSync('/etc/letsencrypt/live/grance.hackerclass.ru/chain.pem', 'utf8');
+
+const credentials1 = {
+	key: privateKey1,
+	cert: certificate1,
+	ca: ca1
+};
+
+const httpsServer = https.createServer(credentials1, app);
 
 pgClient.on("connect", client => {
   client
@@ -46,6 +58,6 @@ app.post("/comment", async (req, res) => {
   console.log("Create Comment")
 });
 
-app.listen(5000, err => {
-  console.log("Listening port 5000");
+httpsServer.listen(5000, () => {
+  console.log('HTTPS Server running on port 5000');
 });
