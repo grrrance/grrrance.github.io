@@ -44,20 +44,9 @@ export const Projects = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2 class="text-selection">Projects</h2>
                 <p class="text-selection">The collection of my projects is not extensive, but in the future it is planned to replenish the quantity and quality.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first"><div class="text-selection">Tab 1</div></Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second"><div class="text-selection">Tab 2</div></Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third"><div class="text-selection">Tab 3</div></Nav.Link>
-                    </Nav.Item>
-                  </Nav>
+                <Tab.Container id="projects-tabs" defaultActiveKey="second">
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
+                    <Tab.Pane eventKey="second">
                       <Row>
                         {
                           projects.map((project, index) => {
@@ -70,12 +59,6 @@ export const Projects = () => {
                           })
                         }
                       </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <p class="text-selection">A mouse hanged itself in the collection of my projects 😭</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p class="text-selection">A mouse hanged itself in the collection of my projects 😭</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

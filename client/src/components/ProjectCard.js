@@ -3,8 +3,8 @@ import React from 'react'
 
 export const ProjectCard = ({ title, description, status, imgUrl, projectUrl }) => {
   return (
-    <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx" onClick={() => window.open(projectUrl)}>
+    <Col size={12} sm={6} md={4} >
+      <div className="proj-imgbx projectCard" onClick={() => window.open(projectUrl)}>
         <img class="text-selection" src={imgUrl} />
         <div className="proj-txtx">
           <h4 class="text-selection">{title}</h4>

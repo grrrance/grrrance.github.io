@@ -437,6 +437,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+.projectCard {
+  cursor: pointer;
+}
+
 .project {
   padding: 80px 0;
   position: relative;
