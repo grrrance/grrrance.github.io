@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bda6c5bc.css",
+    "main.js": "/static/js/main.98c60b9a.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/me.png": "/static/media/me.49d2d1c7c376ba1bb508.png",
+    "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/color-sharp2.png": "/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/fpImg.png": "/static/media/fpImg.537fb0f6115088e7f4cb.png",
+    "static/media/adasImg.png": "/static/media/adasImg.fe0b180e98ffa429f773.png",
+    "static/media/banner-bg.png": "/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/weatherImg.png": "/static/media/weatherImg.08788c0b9ee07dbc46f8.png",
+    "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/footer-bg.png": "/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/75.png": "/static/media/75.fcb2b6ca20f2d1faf4a1.png",
+    "static/media/50.png": "/static/media/50.6a048a9d487c12a3f734.png",
+    "static/media/25.png": "/static/media/25.f74fab649fe1874c6468.png",
+    "static/media/100.png": "/static/media/100.b0a4c486a5d067d30e30.png",
+    "static/media/contact-img.svg": "/static/media/contact-img.62aa99e0f3b968b5d1ce9eb047f34fc7.svg",
+    "static/media/minecraft.ttf": "/static/media/minecraft.e01d4c33797bad833313.ttf",
+    "static/media/logo.png": "/static/media/logo.96cf040708077ecd815a.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/inst.svg": "/static/media/inst.4d969dd141d389ed7a2fe7584b56d681.svg",
+    "index.html": "/index.html",
+    "static/media/discord.svg": "/static/media/discord.6896f581777b2670413ba18a9a621ee8.svg",
+    "static/media/steam.svg": "/static/media/steam.5e4b7bf916ff163f3526d9d1bf44f939.svg",
+    "static/media/tg.svg": "/static/media/tg.7a397da97f58e52383916be3bd0075d7.svg",
+    "static/media/gh.svg": "/static/media/gh.22e65707326e3e1e37afd21c5334995a.svg",
+    "main.bda6c5bc.css.map": "/static/css/main.bda6c5bc.css.map",
+    "main.98c60b9a.js.map": "/static/js/main.98c60b9a.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bda6c5bc.css",
+    "static/js/main.98c60b9a.js"
+  ]
+}
